@@ -3,11 +3,6 @@
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
-void SumMToN(int m, int n)
-{
-    Console.Write(SumMN(m - 1, n));
-}
-
 int SumMN(int m, int n)
 {
     int res = m;
@@ -25,4 +20,4 @@ Console.Write("Введите число M: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число N: ");
 int n = Convert.ToInt32(Console.ReadLine());
-SumMToN(m, n);
+Console.Write(SumMN(m - 1, n));
